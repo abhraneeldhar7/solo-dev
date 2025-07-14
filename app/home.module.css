@@ -1,0 +1,256 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+.homemain {
+    font-family: "Poppins";
+    background: rgb(11, 11, 13);
+    background: linear-gradient(148deg, rgba(11, 11, 13, 1) 28%, rgba(27, 27, 29, 1) 67%);
+    width: 100%;
+    min-height: 100vh;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    color: white;
+    padding: 50px;
+    padding-top: 40px;
+    position: relative;
+}
+
+
+.visits{
+    position: absolute;
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    top: 10px;
+    left: 10px;
+    font-family: monospace;
+    font-size: 15px;
+}
+.ninja{
+    height: 20px;
+    width: 20px;
+    border-radius: 5px;
+}
+
+
+.bigHeader {
+    text-align: center;
+    font-weight: 600;
+    font-size: 70px;
+    position: relative;
+}
+
+
+.bigHeader span {
+    color: rgb(132, 250, 152);
+    filter: drop-shadow(0px 0px 30px rgb(132, 250, 152)); 
+}
+
+.headerPara {
+    font-size: 20px;
+    font-weight: 400;
+    text-align: center;
+    color: rgba(255, 255, 255, 0.575);
+}
+
+.searchInput {
+    width: 60%;
+    font-size: 20px;
+    padding: 30px 40px;
+    border-radius: 15px;
+    margin: 30px auto;
+    background-color: #1f1f21;
+}
+
+.searchInput:focus,
+.searchInput:active {
+    outline: none;
+    border: none;
+}
+
+.languageCardHolder {
+    margin-top: 40px;
+    gap: 30px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    row-gap: 5vw;
+}
+
+.languageCard {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 250px;
+    padding: 10px;
+    border-radius: 20px;
+    border: 2px solid rgba(255, 255, 255, 0.152);
+    animation: slideIn 0.5s ease-in;
+    transition: all 0.2s;
+    margin: 0px auto;
+    overflow: hidden;
+}
+
+@keyframes slideIn {
+    0% {
+        transform: translateY(-20px);
+        opacity: 0;
+    }
+}
+
+.languageCard:hover {
+    transform: scale(1.04) translateY(-5px);
+}
+
+.terminalIcon {
+    height: 40px;
+    width: 40px;
+    aspect-ratio: 1;
+    display: flex;
+    background-color: black;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.languageCard .logo {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 15px;
+}
+
+.languageCard .logo img {
+    height: 75px;
+    width: 75px;
+    object-fit: contain;
+}
+
+.languageCard h1 {
+    text-align: center;
+    font-size: 25px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.python {
+    background: rgba(78, 163, 233, 0.4);
+}
+
+.python img {
+    filter: drop-shadow(0px 0px 30px #42a0ed);
+}
+
+.javascript {
+    background-color: rgba(251, 215, 37, 0.4);
+}
+
+.javascript img {
+    filter: drop-shadow(0px 0px 30px #fbd725);
+
+}
+
+.html {
+    background-color: rgba(241, 101, 41, 0.4);
+}
+
+.html img {
+    filter: drop-shadow(0px 0px 30px #f16529);
+
+}
+
+.css {
+    background-color: rgba(38, 77, 228, 0.4);
+}
+
+.css img {
+    filter: drop-shadow(0px 0px 30px #2965f1);
+
+}
+
+.typescript{
+    background-color: rgba(49,120,198,0.4);
+}
+.typescript img{
+    filter: drop-shadow(0px 0px 30px #3178c6);
+}
+.react{
+    background-color: rgba(0,216,255,0.4);
+}
+.react img{
+    filter: drop-shadow(0px 0px 30px #30d5f2);
+}
+.cpp{
+    background-color:rgba(0,89,156,0.4);
+}
+.cpp img{
+    filter: drop-shadow(0px 0px 30px #659ad2);
+}
+.c{
+    background-color:rgba(0,89,156,0.4);
+}
+.c img{
+    filter: drop-shadow(0px 0px 30px #659ad2);
+}
+
+
+.NEXTjs {
+    background-color: black;
+}
+
+
+
+
+@media(max-width:500px) {
+    .homemain {
+        padding: 10px;
+    }
+
+    .bigHeader {
+        font-size: 60px;
+    }
+
+    .headerPara {
+        font-size: 15px;
+        padding: 0px 10px;
+    }
+
+    .searchInput {
+        font-size: 15px;
+        width: 97%;
+        padding: 10px 20px;
+        border-radius: 10px;
+    }
+
+    .languageCardHolder {
+        margin-top: 0;
+        gap: 10px;
+        grid-template-columns: repeat(auto-fit, minmax(35vw, 1fr));
+    }
+    .languageCard {
+        width: 45vw;
+        height: 40vw;
+        gap: 0;
+    }
+
+    .languageCard .terminalIcon {
+        height: 10vw;
+        width: 10vw;
+    }
+
+    .languageCard .logo img {
+        height: 12vw;
+        width: 12vw;
+    }
+
+    .languageCard h1 {
+        font-size: 5vw;
+    }
+    .visits{
+        display: none;
+    }
+}
